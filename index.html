@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NyxLauncher — Gestiona tus servidores de Minecraft</title>
+<meta name="description" content="NyxLauncher: arranca, monitoriza, mapea y configura tus servidores de Minecraft desde una sola app de escritorio. Gratis, para Windows." />
+
+<link rel="icon" href="assets/logo.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="bg-blocks" aria-hidden="true">
+  <span class="block b-amethyst b1"></span>
+  <span class="block b-diamond b2"></span>
+  <span class="block b-emerald b3"></span>
+  <span class="block b-amethyst b4"></span>
+  <span class="block b-diamond b5"></span>
+  <span class="block b-emerald b6"></span>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="" class="brand-icon" />
+      <span>NyxLauncher</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#funciones">Funciones</a>
+      <a href="#remoto">Acceso remoto</a>
+      <a href="#capturas">Capturas</a>
+      <a href="https://github.com/LastWardMZ/nyxlauncher" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <a class="btn btn-small btn-primary" data-download-btn href="https://github.com/LastWardMZ/nyxlauncher/releases/latest">
+      Descargar
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="pixel-tag">v<span data-version>0.9.2</span> · Windows</div>
+      <img src="assets/logo.png" alt="NyxLauncher" class="hero-logo" />
+      <h1 class="pixel-font">NyxLauncher</h1>
+      <p class="hero-tagline">
+        Arranca, monitoriza, mapea y configura Paper, Purpur, Folia, Fabric, Forge, NeoForge,
+        vanilla y proxies como Velocity — sin tocar una terminal.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-large" data-download-btn href="https://github.com/LastWardMZ/nyxlauncher/releases/latest">
+          <span class="btn-icon">⬇</span>
+          <span class="btn-text">
+            <strong data-download-label>Descargar para Windows</strong>
+            <small data-download-sub>Última versión</small>
+          </span>
+        </a>
+        <a class="btn btn-ghost btn-large" href="https://github.com/LastWardMZ/nyxlauncher" target="_blank" rel="noopener">
+          Ver en GitHub
+        </a>
+      </div>
+      <p class="hero-note">Gratis y de código abierto · No requiere cuenta</p>
+    </div>
+  </section>
+
+  <section class="showcase-strip" aria-hidden="true">
+    <img src="assets/screenshots/dashboard.png" alt="" />
+  </section>
+
+  <section id="funciones" class="section">
+    <h2 class="section-title pixel-font">Funciones</h2>
+    <p class="section-sub">Todo lo que necesitas para llevar un servidor, en una sola app.</p>
+
+    <div class="slot-grid">
+      <article class="slot">
+        <div class="slot-icon slot-amethyst">🖥️</div>
+        <h3>Multiservidor</h3>
+        <p>Administra cuantos servidores quieras desde un único dashboard, con estado, CPU, RAM y uptime en vivo.</p>
+      </article>
+      <article class="slot">
+        <div class="slot-icon slot-diamond">⚙️</div>
+        <h3>Cualquier tipo de servidor</h3>
+        <p>Paper, Purpur, Folia, Fabric, Forge, NeoForge, vanilla y proxies (Velocity). Importa servidores existentes desde un .zip.</p>
+      </article>
+      <article class="slot">
+        <div class="slot-icon slot-emerald">📦</div>
+        <h3>Gestor de contenido</h3>
+        <p>Busca, instala, actualiza y desinstala plugins y mods directamente desde Modrinth, con vista previa de cada proyecto.</p>
+      </article>
+      <article class="slot">
+        <div class="slot-icon slot-amethyst">🗺️</div>
+        <h3>Mapa interactivo</h3>
+        <p>Genera un mapa 2D/3D navegable del mundo con BlueMap, integrado en la propia app. Funciona incluso en vanilla.</p>
+      </article>
+      <article class="slot">
+        <div class="slot-icon slot-diamond">📊</div>
+        <h3>Analítica en tiempo real</h3>
+        <p>Gráficas de uso de CPU y RAM, y estadísticas de almacenamiento en disco.</p>
+      </article>
+      <article class="slot">
+        <div class="slot-icon slot-emerald">🧩</div>
+        <h3>Consola integrada</h3>
+        <p>Arranca, para y manda comandos sin abrir una ventana externa.</p>
+      </article>
+      <article class="slot">
+        <div class="slot-icon slot-amethyst">📁</div>
+        <h3>Explorador de archivos</h3>
+        <p>Navega, edita y gestiona los ficheros del servidor desde la propia app.</p>
+      </article>
+      <article class="slot">
+        <div class="slot-icon slot-diamond">👥</div>
+        <h3>Gestión de jugadores</h3>
+        <p>Whitelist, ops y baneos desde una interfaz visual.</p>
+      </article>
+      <article class="slot">
+        <div class="slot-icon slot-emerald">💾</div>
+        <h3>Copias de seguridad</h3>
+        <p>Backups automáticos programados por servidor.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="remoto" class="section section-remote">
+    <h2 class="section-title pixel-font">Acceso remoto</h2>
+    <p class="section-sub">Abre el panel completo desde el navegador de otro dispositivo — tu móvil, otro PC, desde donde sea.</p>
+
+    <div class="ore-grid">
+      <article class="ore-card ore-diamond">
+        <div class="ore-header">
+          <span class="ore-gem">💎</span>
+          <h3>Red local</h3>
+        </div>
+        <p>Accede desde cualquier dispositivo de tu propia WiFi. Escanea un código QR y entras.</p>
+      </article>
+      <article class="ore-card ore-amethyst">
+        <div class="ore-header">
+          <span class="ore-gem">🔮</span>
+          <h3>Solo mis dispositivos</h3>
+        </div>
+        <p>Una red privada vía Tailscale — cero puertos expuestos a internet, solo tus propios aparatos.</p>
+      </article>
+      <article class="ore-card ore-emerald">
+        <div class="ore-header">
+          <span class="ore-gem">💚</span>
+          <h3>Acceso público</h3>
+        </div>
+        <p>Entra desde cualquier sitio vía Cloudflare Tunnel, con 2FA, aprobación de dispositivos y avisos por email.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="capturas" class="section">
+    <h2 class="section-title pixel-font">Capturas</h2>
+    <p class="section-sub">Así se ve por dentro.</p>
+
+    <div class="frame frame-wide">
+      <div class="frame-bar"><span></span><span></span><span></span></div>
+      <img src="assets/screenshots/dashboard.png" alt="Dashboard de NyxLauncher" loading="lazy" />
+    </div>
+
+    <div class="frame-pair">
+      <div class="frame">
+        <div class="frame-bar"><span></span><span></span><span></span></div>
+        <img src="assets/screenshots/content.png" alt="Gestor de contenido de NyxLauncher" loading="lazy" />
+      </div>
+      <div class="frame">
+        <div class="frame-bar"><span></span><span></span><span></span></div>
+        <img src="assets/screenshots/analytics.png" alt="Analítica de NyxLauncher" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-inner">
+      <h2 class="pixel-font">Empieza ya</h2>
+      <p>Gratis, para Windows, sin cuenta necesaria.</p>
+      <a class="btn btn-primary btn-large" data-download-btn href="https://github.com/LastWardMZ/nyxlauncher/releases/latest">
+        <span class="btn-icon">⬇</span>
+        <span class="btn-text">
+          <strong data-download-label>Descargar para Windows</strong>
+          <small data-download-sub>Última versión</small>
+        </span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="" class="brand-icon" />
+      <span>NyxLauncher</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/LastWardMZ/nyxlauncher" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/LastWardMZ/nyxlauncher/releases" target="_blank" rel="noopener">Releases</a>
+      <a href="https://github.com/LastWardMZ/nyxlauncher/issues" target="_blank" rel="noopener">Reportar un problema</a>
+    </div>
+    <p class="footer-note">No afiliado con Mojang ni Microsoft. Minecraft es una marca registrada de Mojang Synergies AB.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
