@@ -369,3 +369,45 @@ main, header, footer { position: relative; z-index: 1; }
   color: hsl(var(--muted) / 0.7);
   margin: 8px 0 0;
 }
+
+/* ==== Docker section ==== */
+.docker-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 860px) {
+  .docker-layout { grid-template-columns: 1fr; }
+}
+
+.docker-points {
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.code-block {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  overflow: hidden;
+  box-shadow: var(--shadow-hard);
+}
+.code-block pre {
+  margin: 0;
+  padding: 20px;
+  overflow-x: auto;
+}
+.code-block code {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  color: hsl(var(--emerald));
+  white-space: pre;
+}
+.docker-points p code {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 12px;
+  background: hsl(var(--bg-alt));
+  padding: 1px 5px;
+  border: 1px solid hsl(var(--border));
+}
